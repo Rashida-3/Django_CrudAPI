@@ -12,7 +12,7 @@ class StudentAPI(APIView):
         if serilizer.is_valid():
             serilizer.save()
             return Response(serilizer.errors)
-        print(serilizer)
+        # print(serilizer)
 
         return Response({'msg': 'created success'})
     
